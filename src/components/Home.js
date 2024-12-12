@@ -86,7 +86,7 @@ const HomePage = () => {
       <h1>Task Manager</h1>
       {error && <p className={styles.error}>{error}</p>}
 
-      {/* Add/Edit Task Form */}
+   
       <form className={styles.form} onSubmit={editingTask ? handleUpdateTask : handleAddTask}>
         <input
           type="text"
@@ -117,7 +117,7 @@ const HomePage = () => {
         <button type="submit">{editingTask ? 'Update Task' : 'Add Task'}</button>
       </form>
 
-      {/* Task List */}
+
       <div className={styles.taskList}>
         {tasks.map((task) => (
           <div key={task._id} className={styles.task}>
