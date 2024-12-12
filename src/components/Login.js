@@ -4,8 +4,8 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
-  const navigate = useNavigate(); // Renamed for convention
-  const [formData, setFormData] = useState({ mail: '', password: '' }); // Updated 'username' to 'mail'
+  const navigate = useNavigate(); 
+  const [formData, setFormData] = useState({ mail: '', password: '' }); 
   const [error, setError] = useState('');
 
   const handleChange = (e) => {
